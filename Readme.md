@@ -3,7 +3,7 @@
 ## Overview
 The Partially Mapped Crossover (PMX) method is a crossover technique used in genetic algorithms, particularly effective for permutation-based problems such as the Traveling Salesman Problem. It ensures a meaningful exchange of information between parent solutions while maintaining the uniqueness of each element.
 
-![Partially Mapped Crossover Example](images/Example-of-partially-mapped-crossover.png)
+![Partially Mapped Crossover Example](Example-of-partially-mapped-crossover.png)
 
 ## Implementation
 This Python implementation of PMX facilitates crossover between two parent sequences, producing offspring that are combinations of the parents while preserving the uniqueness of elements.
