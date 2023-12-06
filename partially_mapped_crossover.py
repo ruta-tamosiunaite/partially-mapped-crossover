@@ -3,7 +3,7 @@ import random
 def partially_mapped_crossover(parent1, parent2, number_of_children=1):
     size = len(parent1)
     # Step 1: Select crossover range at random
-    start, end = sorted(random.sample(range(1, size - 1), 2))  # Avoid the first and last gene (the hive)
+    start, end = sorted(random.sample(range(1, size - 2), 2))  # Avoid the first and last gene (the hive) (Last element of the list is (length - 1). Thus, it is (length - 2) to avoid the last gene)
 
     # Step 2: Create offspring by exchanging the selected range
     child1 = parent1[:start] + parent2[start:end] + parent1[end:]
